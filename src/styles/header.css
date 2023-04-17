@@ -1,0 +1,20 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 8rem;
+    width: 100%;
+}
+
+header > h1 {
+    font-size: var(--font-1);
+    font-weight: var(--font-weight-1);
+    line-height: 2.125rem;
+}
+
+header > .button__ilumination--mode {
+    height: 2.25rem;
+    width: 2.25rem;
+}

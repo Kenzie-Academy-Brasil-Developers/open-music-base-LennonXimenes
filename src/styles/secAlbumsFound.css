@@ -1,0 +1,25 @@
+.container__albumsFound {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 4rem;
+
+    height: 20rem;
+    width: 100%;
+}
+
+.container__albumsFound > h3 {
+    font-size: var(--font-2);
+    font-weight: var(--font-weight-1);
+    line-height: 1.21rem;
+}
+
+.container__albumsFound > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container__albumsFound > li {
+
+}

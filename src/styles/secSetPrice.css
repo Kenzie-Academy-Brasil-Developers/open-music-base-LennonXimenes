@@ -1,0 +1,38 @@
+.container__setPrice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 4rem;
+
+    height: 6rem;
+    width: 100%;
+}
+
+.container__setPrice--info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 3rem;
+    width: 100%;
+}
+
+.container__setPrice > .container__setPrice--info > h3 {
+    font-size: var(--font-2);
+    font-weight: var(--font-weight-1);
+    line-height: 1.21rem;
+}
+
+.container__setPrice > .container__setPrice--info > label {
+    font-size: var(--font-2);
+    font-weight: var(--font-weight-1);
+    line-height: 1.21rem;
+}
+
+.container__setPrice > input {
+    height: .5rem;
+    width: 100%;
+}

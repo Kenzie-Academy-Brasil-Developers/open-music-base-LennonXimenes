@@ -1,0 +1,25 @@
+.container__musicGenre {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 4rem;
+
+    height: 6rem;
+    width: 100%;
+}
+
+.container__musicGenre > h3 {
+    font-size: var(--font-2);
+    font-weight: var(--font-weight-1);
+    line-height: 1.21rem;
+}
+
+.container__musicGenre > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container__musicGenre > li {
+
+}
