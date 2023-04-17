@@ -9,17 +9,36 @@
 }
 
 .container__musicGenre > h3 {
+    align-self: flex-start;
+
     font-size: var(--font-2);
     font-weight: var(--font-weight-1);
     line-height: 1.21rem;
 }
 
-.container__musicGenre > ul {
+.container__musicGenre > .container__musicGenre--Ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    height: 6rem;
+    width: 100%;
+
+    list-style: none;
 }
 
-.container__musicGenre > li {
+.container__musicGenre > .licard {
+    height: 1rem;
+    width: 1rem;
 
+    background-color: blue;
+}
+
+.container__musicGenre > .licard > .btnGenreMusic {
+    height: 2rem;
+    width: 4.4375rem;
+
+    padding: 0.5rem;
+
+    background-color: rgb(255, 0, 170);
 }
