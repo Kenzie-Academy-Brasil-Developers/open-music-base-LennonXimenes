@@ -2,9 +2,9 @@
     display: flex;
     flex-direction: column;
 
-    margin-top: 4rem;
+    margin-top: 2rem;
 
-    height: 6rem;
+    height: 13rem;
     width: 100%;
 }
 
@@ -21,24 +21,36 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    height: 6rem;
+    height: 10rem;
     width: 100%;
 
     list-style: none;
+
+    gap: 1rem;
 }
 
-.container__musicGenre > .licard {
-    height: 1rem;
-    width: 1rem;
+.container__musicGenre > .container__musicGenre--Ul > .licard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    background-color: blue;
+    height: 3rem;
+    width: 5rem;
+
+    margin-top: 1.5rem;
 }
 
-.container__musicGenre > .licard > .btnGenreMusic {
+.container__musicGenre > .container__musicGenre--Ul > .licard > .btnGenreMusic {
     height: 2rem;
-    width: 4.4375rem;
+    width: 4.5rem;
 
     padding: 0.5rem;
+    border-radius: var(--radius-1);
+    border: none;
 
-    background-color: rgb(255, 0, 170);
+    font-size: var(--font-3);
+    font-weight: var(--font-weight-2);
+    line-height: 1.21rem;
+
+    background-color: var(--color-grey-8);
 }
