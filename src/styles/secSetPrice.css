@@ -32,7 +32,27 @@
     line-height: 1.21rem;
 }
 
-.container__setPrice > input {
+.container__setPrice > .setPrice {
+    -webkit-appearance: none;
+    appearance: none;
+
     height: .5rem;
     width: 100%;
+
+    background-color: var(--color-grey-2);
+}
+
+.container__setPrice > .setPrice::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+
+    height: 1rem;
+    width: 1rem;
+
+    border-radius: 50%;
+    border: 0.15rem solid var(--color-grey-1);
+
+    background-color: var(--color-grey-9);
+
+    cursor: pointer;
 }
