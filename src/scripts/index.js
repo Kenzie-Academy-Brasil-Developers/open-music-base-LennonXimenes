@@ -28,3 +28,11 @@ function setPrice (){
     })
 }
 setPrice();
+
+function albumsFound (array){
+    const listUl = document.querySelector(".container__albumsFound--Ul");
+
+    array.forEach(insertedAlbum => {
+        
+    });
+}
