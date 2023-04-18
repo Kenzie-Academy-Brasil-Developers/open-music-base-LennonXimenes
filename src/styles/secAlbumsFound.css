@@ -18,8 +18,16 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    height: 22rem;
+    width: 100%;
+
+    list-style: none;
+
+    gap: 1.5625rem;
 }
 
 .container__albumsFound > li {
-
+    height: 9.375rem;
+    width: 19.375rem;
 }
