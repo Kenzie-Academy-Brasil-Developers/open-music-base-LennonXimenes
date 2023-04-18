@@ -15,3 +15,16 @@ function musicGenre (array){
     });
 }
 musicGenre(categories);
+
+function setPrice (){
+    let value = 0;
+    const range = document.querySelector(".setPrice");
+    const price = document.querySelector("#price");
+
+    range.addEventListener("input", (event) =>{
+    value = Number(event.target.value);
+        
+    price.innerHTML  = `${value.toFixed(2)}`
+    })
+}
+setPrice();

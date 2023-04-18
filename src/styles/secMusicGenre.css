@@ -54,3 +54,13 @@
 
     background-color: var(--color-grey-8);
 }
+
+.container__musicGenre > .container__musicGenre--Ul > .licard > .btnGenreMusic:hover {
+    color: var(--color-grey-8);
+    background-color: var(--color-grey-1);
+}
+
+.container__musicGenre > .container__musicGenre--Ul > .licard > .btnGenreMusic:focus {
+    color: var(--color-grey-8);
+    background-color: var(--color-grey-1);
+}
