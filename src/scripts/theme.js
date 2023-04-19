@@ -17,10 +17,10 @@ function darkMode (array){
     const modePreference = JSON.parse(localStorage.getItem("dark__mode"))
 
     if (modePreference){
-        darkButton.src = "src/assets/img/moon.png" /*por a foto img.src*/
+        darkButton.src = "src/assets/img/moon.png"
         html.classList.add("dark__mode");
     } else {
-        darkButton.src = "src/assets/img.sun/png" /*por a foto*/
+        darkButton.src = "src/assets/img.sun/png"
         html.classList.remove("dark__mode");
     }
 }
