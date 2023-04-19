@@ -8,40 +8,35 @@ function musicGenre (array){
         const btn = document.createElement("button");
         btn.classList.add("btnGenreMusic");
         btn.innerText = button;
-        btn.dataset.musicGenre = Number(index);
+        btn.id = Number(index);
+        btn.addEventListener("click", (event) =>{
+            const btnClickId = Number(event.target.id)
+            const btnId = Number(index);
+            // console.log([button, btnClickId, btnId])
+            if (btnClickId === index){
+                // console.log(btnClickId)
+                // console.log(btnId)
+                let listUlVar = window.listUl
+                listUlVar.innerHTML = "";
+                // console.log(products)
+                let filteredBtn = products.filter(product => product.category == btnClickId)
+                filteredBtn = btnClickId == 0 ? products : filteredBtn
+                // console.log(filteredBtn)
+                createCards(filteredBtn)
+            }
+        })
         listLi.appendChild(btn);
-
         listUl.appendChild(listLi);
     });
 }
 musicGenre(categories);
-
-
-function filterGenre (array) {
-    const listUlGenre = document.querySelector(".container__musicGenre--Ul");
-    const listUlAbum = document.querySelector(".container__albumsFound--Ul");
-
-
-    const musicGenreFilter = array.filter((products) => {
-        if (products.category === btn.dataset.musicGenre){
-            console.log("Vasco")
-            console.log(products.category)
-            console.log(btn.dataset.musicGenre)
-
-            return products
-        }
-        listUlAbum.innerHTML = "";
-        createCards(musicGenreFilter)
-    })
-}
-filterGenre(products)
-
 
 function setPrice (array){
     let value = 0;
     const range = document.querySelector(".setPrice");
     const price = document.querySelector("#price");
     const listUl = document.querySelector(".container__albumsFound--Ul");
+    window.listUl = listUl;
     const listLi = document.querySelector(".licardAlbums")
 
     range.addEventListener("input", (event) =>{
@@ -66,6 +61,7 @@ function createCards (obj){
     const listUl = document.querySelector(".container__albumsFound--Ul");
 
     obj.forEach(insertedAlbum => {
+        // console.log(insertedAlbum.price)
         const listLi = document.createElement("li");
         listLi.classList.add("licardAlbums");
 
