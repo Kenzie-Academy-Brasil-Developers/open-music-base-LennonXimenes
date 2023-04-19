@@ -12,6 +12,8 @@
     font-size: var(--font-2);
     font-weight: var(--font-weight-1);
     line-height: 1.21rem;
+
+    color: var(--color-grey-1);
 }
 
 .container__albumsFound > .container__albumsFound--Ul {
@@ -124,6 +126,8 @@
     background-color: var(--color-grey-7);
     border-radius: .25rem;
     border: none;
+
+    color: var(--color-grey-1);
 }
 
 .container__albumsFound > .container__albumsFound--Ul > .licardAlbums > .divAlbum > .divPriceBtn > .btnAlbum:hover {
