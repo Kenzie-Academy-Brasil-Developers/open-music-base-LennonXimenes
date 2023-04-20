@@ -17,12 +17,24 @@ header > h1 {
 
 }
 
-header > .button__ilumination--mode {
+header > .container__ilumination--mode {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
     height: 2.25rem;
     width: 2.25rem;
+
+    background-color: var(--color-grey-8);
+    border-radius: .35rem;
+    border: none;
 }
 
-.darkButton {
-    height: 2.25rem;
-    width: 2.25rem;
+header > .container__ilumination--mode > .button__ilumination--mode {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    height: 1.25rem;
+    width: 1.25rem;
 }
