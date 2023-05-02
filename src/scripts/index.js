@@ -23,6 +23,7 @@ function musicGenre (array){
                 filteredBtn = btnClickId == 0 ? products : filteredBtn
                 // console.log(filteredBtn)
                 createCards(filteredBtn)
+                setPrice(filteredBtn)
             }
         })
         listLi.appendChild(btn);
